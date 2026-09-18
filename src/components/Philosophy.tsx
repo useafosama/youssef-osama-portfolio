@@ -18,19 +18,19 @@ export function Philosophy() {
       {/* Background Subtle Accent Aura */}
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-[var(--accent)]/5 rounded-full blur-3xl pointer-events-none -z-10" />
 
-      <div className="max-w-6xl mx-auto px-6 md:px-8 text-center">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 md:px-8 text-center">
         {/* Intro Tag */}
-        <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full text-xs font-mono uppercase tracking-widest text-[var(--accent)] bg-[var(--bg-surface-elevated)] border border-[var(--border-subtle)] mb-8">
+        <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full text-xs font-mono uppercase tracking-widest text-[var(--accent)] bg-[var(--bg-surface-elevated)] border border-[var(--border-subtle)] mb-6 sm:mb-8">
           <span className="w-1.5 h-1.5 rounded-full bg-[var(--accent)]" />
           <span>فلسفة العمل • PHILOSOPHY</span>
         </div>
 
         {/* Big Typography Statements */}
-        <p className="text-xl sm:text-2xl md:text-3xl lg:text-4xl text-[var(--text-secondary)] font-medium mb-4">
+        <p className="text-fluid-subheading text-[var(--text-secondary)] font-medium mb-3 sm:mb-4">
           أنا لا أصمم شاشات فقط.
         </p>
 
-        <h2 className="font-heading text-5xl sm:text-7xl md:text-8xl lg:text-9xl font-black text-[var(--text-primary)] tracking-tight leading-[1.05] mb-16 md:mb-24 select-none">
+        <h2 className="font-heading text-fluid-hero font-black text-[var(--text-primary)] tracking-tight leading-[1.18] mb-12 sm:mb-16 md:mb-24 select-none">
           أنا أبني تجارب.
         </h2>
 

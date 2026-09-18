@@ -21,15 +21,15 @@ import {
 export function FeaturedProjects() {
   return (
     <section id="works" className="py-28 md:py-40 relative">
-      <div className="max-w-6xl mx-auto px-6 md:px-8">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 md:px-8">
         {/* Section Header */}
-        <div className="flex flex-col md:flex-row md:items-end justify-between mb-16 md:mb-24 pb-8 border-b border-[var(--border-subtle)]">
+        <div className="flex flex-col md:flex-row md:items-end justify-between mb-12 sm:mb-16 md:mb-24 pb-6 sm:pb-8 border-b border-[var(--border-subtle)]">
           <div>
             <div className="flex items-center gap-2 text-xs font-mono uppercase tracking-widest text-[var(--accent)] mb-3">
               <span className="w-1.5 h-1.5 rounded-full bg-[var(--accent)]" />
               <span>مشاريع مختارة • FEATURED WORKS</span>
             </div>
-            <h2 className="font-heading text-4xl sm:text-5xl md:text-6xl font-extrabold text-[var(--text-primary)]">
+            <h2 className="font-heading text-fluid-section font-extrabold text-[var(--text-primary)] leading-[1.2]">
               مشاريع صنعتها
             </h2>
           </div>
@@ -39,14 +39,14 @@ export function FeaturedProjects() {
         </div>
 
         {/* Featured Projects Editorial List */}
-        <div className="space-y-28 md:space-y-40">
+        <div className="space-y-24 sm:space-y-28 md:space-y-40">
           {/* PROJECT 01: QGYM — نظام إدارة الجيم */}
           <article className="group relative">
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
               {/* Project Info (5 cols) */}
               <div className="lg:col-span-5 order-2 lg:order-1 flex flex-col justify-between h-full">
                 <div>
-                  <div className="flex items-center gap-3 mb-4">
+                  <div className="flex flex-wrap items-center gap-2 sm:gap-3 mb-4">
                     <span className="font-mono text-xs text-[var(--accent)] font-semibold tracking-wider">
                       PROJECT 01
                     </span>
@@ -58,14 +58,14 @@ export function FeaturedProjects() {
                     </span>
                   </div>
 
-                  <h3 className="font-heading text-3xl sm:text-4xl md:text-5xl font-bold text-[var(--text-primary)] mb-3 flex items-baseline gap-3 group-hover:translate-x-[-4px] transition-transform duration-300">
+                  <h3 className="font-heading text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-[var(--text-primary)] mb-3 flex flex-wrap items-baseline gap-2 sm:gap-3 group-hover:translate-x-[-4px] transition-transform duration-300 leading-snug">
                     <span>QGYM</span>
-                    <span className="text-xl md:text-2xl text-[var(--text-secondary)] font-normal font-sans">
+                    <span className="text-lg sm:text-xl md:text-2xl text-[var(--text-secondary)] font-normal font-sans">
                       — نظام إدارة الجيم
                     </span>
                   </h3>
 
-                  <p className="text-base sm:text-lg text-[var(--text-secondary)] leading-relaxed mb-6 font-normal">
+                  <p className="text-sm sm:text-base md:text-lg text-[var(--text-secondary)] leading-relaxed mb-6 font-normal">
                     نظام متكامل لإدارة الجيم والفروع والعملاء والاشتراكات والحضور والمدفوعات والتقارير من مكان واحد، مصمم لتقديم تجربة تحكم شاملة وسريعة لأصحاب الأندية والمدربين.
                   </p>
 
@@ -337,14 +337,14 @@ export function FeaturedProjects() {
                     <span className="text-xs text-[var(--text-muted)] font-mono">2025</span>
                   </div>
 
-                  <h3 className="font-heading text-3xl sm:text-4xl md:text-5xl font-bold text-[var(--text-primary)] mb-3 flex items-baseline gap-3 group-hover:translate-x-[-4px] transition-transform duration-300">
+                  <h3 className="font-heading text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-[var(--text-primary)] mb-3 flex flex-wrap items-baseline gap-2 sm:gap-3 group-hover:translate-x-[-4px] transition-transform duration-300 leading-snug">
                     <span>واظب</span>
-                    <span className="text-xl md:text-2xl text-[var(--text-secondary)] font-normal font-sans">
+                    <span className="text-lg sm:text-xl md:text-2xl text-[var(--text-secondary)] font-normal font-sans">
                       — Wazeb
                     </span>
                   </h3>
 
-                  <p className="text-base sm:text-lg text-[var(--text-secondary)] leading-relaxed mb-6 font-normal">
+                  <p className="text-sm sm:text-base md:text-lg text-[var(--text-secondary)] leading-relaxed mb-6 font-normal">
                     تجربة رقمية لبناء العادات والاستمرارية، مصممة لتجعل متابعة العادات أكثر وضوحًا وتحفيزًا، مع واجهة تركز على الإنجاز اليومي والتحفيز المستمر.
                   </p>
 
@@ -391,14 +391,14 @@ export function FeaturedProjects() {
                     <span className="text-xs text-[var(--text-muted)] font-mono">2025</span>
                   </div>
 
-                  <h3 className="font-heading text-3xl sm:text-4xl md:text-5xl font-bold text-[var(--text-primary)] mb-3 flex items-baseline gap-3 group-hover:translate-x-[-4px] transition-transform duration-300">
+                  <h3 className="font-heading text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-[var(--text-primary)] mb-3 flex flex-wrap items-baseline gap-2 sm:gap-3 group-hover:translate-x-[-4px] transition-transform duration-300 leading-snug">
                     <span>سكينة</span>
-                    <span className="text-xl md:text-2xl text-[var(--text-secondary)] font-normal font-sans">
+                    <span className="text-lg sm:text-xl md:text-2xl text-[var(--text-secondary)] font-normal font-sans">
                       — Sakinah
                     </span>
                   </h3>
 
-                  <p className="text-base sm:text-lg text-[var(--text-secondary)] leading-relaxed mb-6 font-normal">
+                  <p className="text-sm sm:text-base md:text-lg text-[var(--text-secondary)] leading-relaxed mb-6 font-normal">
                     تجربة رقمية هادئة للأذكار والمحتوى الإسلامي، مع تركيز تام على البساطة والوضوح وسهولة الاستخدام بدون إعلانات أو مشتتات بصرية.
                   </p>
 

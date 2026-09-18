@@ -61,6 +61,14 @@
 
 * {
   box-sizing: border-box;
+  overflow-wrap: break-word;
+  word-break: normal;
+  hyphens: none;
+}
+
+html, body {
+  max-width: 100vw;
+  overflow-x: hidden;
 }
 
 html {
@@ -77,19 +85,39 @@ html {
 body {
   margin: 0;
   padding: 0;
-  overflow-x: hidden;
   font-family: var(--font-ibm-arabic), system-ui, -apple-system, sans-serif;
   background-color: var(--bg-primary);
   color: var(--text-primary);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  line-height: 1.6;
+}
+
+/* Fluid Typography Utilities for Arabic Script */
+.text-fluid-hero {
+  font-size: clamp(2.35rem, 8vw + 0.2rem, 6.25rem);
+  line-height: 1.15;
+}
+
+.text-fluid-section {
+  font-size: clamp(1.85rem, 5vw + 0.2rem, 3.75rem);
+  line-height: 1.22;
+}
+
+.text-fluid-subheading {
+  font-size: clamp(1.15rem, 2.5vw + 0.2rem, 1.85rem);
+  line-height: 1.35;
+}
+
+.text-fluid-stat {
+  font-size: clamp(2.75rem, 6.5vw + 0.2rem, 5rem);
+  line-height: 1.1;
 }
 
 /* Luxury Editorial Headings */
 h1, h2, h3, h4, .font-heading {
   font-family: var(--font-alexandria), system-ui, sans-serif;
-  letter-spacing: -0.025em;
-  text-wrap: balance;
+  letter-spacing: -0.02em;
 }
 
 /* Accessible Focus States */

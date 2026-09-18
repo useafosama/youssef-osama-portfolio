@@ -62,23 +62,23 @@ export function About() {
 
   return (
     <section id="about" className="py-28 md:py-40 relative">
-      <div className="max-w-6xl mx-auto px-6 md:px-8">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 md:px-8">
         {/* Section Tag */}
         <div className="flex items-center gap-2 text-xs font-mono uppercase tracking-widest text-[var(--accent)] mb-4">
           <span className="w-1.5 h-1.5 rounded-full bg-[var(--accent)]" />
           <span>عن يوسف • ABOUT</span>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-start">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16 items-start">
           {/* Narrative Column (7 cols) */}
           <div className="lg:col-span-7">
-            <h2 className="font-heading text-4xl sm:text-5xl md:text-6xl font-extrabold text-[var(--text-primary)] mb-8 tracking-tight">
+            <h2 className="font-heading text-fluid-section font-extrabold text-[var(--text-primary)] mb-6 sm:mb-8 tracking-tight leading-[1.2]">
               مين يوسف؟
             </h2>
 
             {/* Structured Punchy Bio */}
-            <div className="space-y-5 text-base sm:text-lg text-[var(--text-secondary)] leading-relaxed font-normal">
-              <p className="text-xl sm:text-2xl text-[var(--text-primary)] font-semibold font-heading leading-snug">
+            <div className="space-y-4 sm:space-y-5 text-sm sm:text-base md:text-lg text-[var(--text-secondary)] leading-relaxed font-normal">
+              <p className="text-lg sm:text-xl md:text-2xl text-[var(--text-primary)] font-semibold font-heading leading-snug">
                 مصمم جرافيك، محرر فيديو، ومطور مهتم ببناء التجارب والمنتجات الرقمية.
               </p>
 
@@ -137,14 +137,14 @@ export function About() {
           </div>
 
           {/* Typography-Driven Stats Column (5 cols) */}
-          <div className="lg:col-span-5 flex flex-col justify-center space-y-10 pt-4 lg:pt-0 border-t lg:border-t-0 lg:border-r border-[var(--border-subtle)] lg:pr-12">
+          <div className="lg:col-span-5 flex flex-col justify-center space-y-8 sm:space-y-10 pt-4 lg:pt-0 border-t lg:border-t-0 lg:border-r border-[var(--border-subtle)] lg:pr-12">
             <div className="text-xs font-mono uppercase tracking-widest text-[var(--accent)] font-semibold">
               يوسف بالأرقام • BY THE NUMBERS
             </div>
 
             {yosuefStats.map((stat, i) => (
               <div key={stat.id} className="group flex flex-col space-y-2">
-                <div className="text-6xl sm:text-7xl md:text-8xl font-black text-[var(--text-primary)] group-hover:text-[var(--accent)] transition-colors duration-300">
+                <div className="text-fluid-stat font-black text-[var(--text-primary)] group-hover:text-[var(--accent)] transition-colors duration-300">
                   <CounterNumber
                     targetValue={stat.value}
                     suffix={stat.suffix}

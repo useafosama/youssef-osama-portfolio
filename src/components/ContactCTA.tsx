@@ -54,46 +54,48 @@ export function ContactCTA() {
   };
 
   return (
-    <section id="contact" className="py-28 md:py-44 relative overflow-hidden">
+    <section id="contact" className="py-24 sm:py-28 md:py-44 relative overflow-hidden">
       {/* Background Glow */}
       <div className="absolute bottom-0 right-1/2 translate-x-1/2 w-[700px] h-[350px] bg-[var(--accent)]/10 rounded-full blur-[140px] pointer-events-none -z-10" />
 
-      <div className="max-w-5xl mx-auto px-6 md:px-8 text-center">
+      <div className="max-w-5xl mx-auto px-4 sm:px-6 md:px-8 text-center">
         {/* Intro Badge */}
-        <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full text-xs font-mono uppercase tracking-widest text-[var(--accent)] bg-[var(--bg-surface-elevated)] border border-[var(--border-subtle)] mb-8">
+        <div className="inline-flex items-center gap-2 px-3.5 sm:px-4 py-1.5 rounded-full text-xs font-mono uppercase tracking-widest text-[var(--accent)] bg-[var(--bg-surface-elevated)] border border-[var(--border-subtle)] mb-6 sm:mb-8">
           <Sparkles className="w-3.5 h-3.5" />
           <span>جاهز لبناء شيء استثنائي • GET IN TOUCH</span>
         </div>
 
         {/* Small Intro Title */}
-        <p className="text-xl sm:text-2xl md:text-3xl text-[var(--text-secondary)] font-medium mb-4">
+        <p className="text-fluid-subheading text-[var(--text-secondary)] font-medium mb-3 sm:mb-4">
           عندك فكرة؟
         </p>
 
         {/* Big Typography CTA */}
-        <h2 className="font-heading text-4xl sm:text-6xl md:text-7xl lg:text-8xl font-black text-[var(--text-primary)] tracking-tight leading-[1.08] mb-12 max-w-4xl mx-auto select-none">
+        <h2 className="font-heading text-fluid-hero font-black text-[var(--text-primary)] tracking-tight leading-[1.18] mb-8 sm:mb-12 max-w-4xl mx-auto select-none">
           خلينا نحولها لحاجة حقيقية.
         </h2>
 
         {/* Real Contact Badges (Email & Phone) with Micro-interactions */}
-        <div className="flex flex-wrap items-center justify-center gap-4 mb-10">
+        <div className="flex flex-col sm:flex-row flex-wrap items-stretch sm:items-center justify-center gap-3 sm:gap-4 mb-8 sm:mb-10">
           {/* Email Box with Mailto and One-Click Copy */}
-          <a
-            href={`mailto:${contactInfo.email}`}
-            className="group inline-flex items-center gap-3 px-6 py-3.5 rounded-2xl bg-[var(--bg-surface)] border border-[var(--border-subtle)] hover:border-[var(--accent)]/50 text-[var(--text-primary)] transition-all duration-300"
-          >
-            <div className="w-8 h-8 rounded-xl bg-[var(--accent)]/10 text-[var(--accent)] flex items-center justify-center">
-              <Mail className="w-4 h-4" />
-            </div>
-            <div className="text-right">
-              <div className="text-[10px] font-mono text-[var(--text-muted)]">البريد الإلكتروني</div>
-              <div className="text-xs sm:text-sm font-bold font-mono">{contactInfo.email}</div>
-            </div>
+          <div className="group flex items-center justify-between sm:justify-start gap-3 px-4 sm:px-6 py-3 sm:py-3.5 rounded-2xl bg-[var(--bg-surface)] border border-[var(--border-subtle)] hover:border-[var(--accent)]/50 text-[var(--text-primary)] transition-all duration-300">
+            <a
+              href={`mailto:${contactInfo.email}`}
+              className="flex items-center gap-3"
+            >
+              <div className="w-8 h-8 rounded-xl bg-[var(--accent)]/10 text-[var(--accent)] flex items-center justify-center shrink-0">
+                <Mail className="w-4 h-4" />
+              </div>
+              <div className="text-right">
+                <div className="text-[10px] font-mono text-[var(--text-muted)]">البريد الإلكتروني</div>
+                <div className="text-xs sm:text-sm font-bold font-mono">{contactInfo.email}</div>
+              </div>
+            </a>
             <button
               onClick={copyEmail}
               title="نسخ البريد"
               aria-label="نسخ البريد الإلكتروني"
-              className="mr-2 p-1.5 rounded-lg bg-[var(--bg-surface-elevated)] hover:bg-[var(--accent)]/20 text-[var(--text-secondary)] hover:text-[var(--text-primary)] transition-colors"
+              className="mr-2 p-1.5 rounded-lg bg-[var(--bg-surface-elevated)] hover:bg-[var(--accent)]/20 text-[var(--text-secondary)] hover:text-[var(--text-primary)] transition-colors shrink-0"
             >
               {copied ? (
                 <span className="text-[11px] font-semibold text-emerald-400 flex items-center gap-1">
@@ -101,18 +103,18 @@ export function ContactCTA() {
                 </span>
               ) : (
                 <span className="text-[11px] text-[var(--text-muted)] hover:text-[var(--text-primary)] flex items-center gap-1">
-                  <Copy className="w-3.5 h-3.5" /> انسخ البريد
+                  <Copy className="w-3.5 h-3.5" /> نسخ
                 </span>
               )}
             </button>
-          </a>
+          </div>
 
           {/* Phone Box with Direct Dial */}
           <a
             href={`tel:${contactInfo.phone}`}
-            className="group inline-flex items-center gap-3 px-6 py-3.5 rounded-2xl bg-[var(--bg-surface)] border border-[var(--border-subtle)] hover:border-[var(--accent)]/50 text-[var(--text-primary)] transition-all duration-300"
+            className="group flex items-center justify-between sm:justify-start gap-3 px-4 sm:px-6 py-3 sm:py-3.5 rounded-2xl bg-[var(--bg-surface)] border border-[var(--border-subtle)] hover:border-[var(--accent)]/50 text-[var(--text-primary)] transition-all duration-300"
           >
-            <div className="w-8 h-8 rounded-xl bg-emerald-500/10 text-emerald-400 flex items-center justify-center">
+            <div className="w-8 h-8 rounded-xl bg-emerald-500/10 text-emerald-400 flex items-center justify-center shrink-0">
               <Phone className="w-4 h-4" />
             </div>
             <div className="text-right">
@@ -126,10 +128,10 @@ export function ContactCTA() {
         </div>
 
         {/* Primary & Secondary Action CTAs */}
-        <div className="flex flex-wrap items-center justify-center gap-4 mb-16">
+        <div className="flex flex-col sm:flex-row flex-wrap items-stretch sm:items-center justify-center gap-3 sm:gap-4 mb-12 sm:mb-16">
           <a
             href={`mailto:${contactInfo.email}`}
-            className="group inline-flex items-center gap-3 px-8 py-4 rounded-2xl bg-[var(--accent)] hover:bg-[var(--accent-hover)] text-white font-bold text-base md:text-lg transition-all duration-300 shadow-xl shadow-[var(--accent)]/25 hover:scale-[1.02] active:scale-[0.98]"
+            className="group inline-flex items-center justify-center gap-3 px-6 sm:px-8 py-3.5 sm:py-4 rounded-2xl bg-[var(--accent)] hover:bg-[var(--accent-hover)] text-white font-bold text-base md:text-lg transition-all duration-300 shadow-xl shadow-[var(--accent)]/25 hover:scale-[1.02] active:scale-[0.98]"
           >
             <MessageSquare className="w-5 h-5" />
             <span>ابدأ محادثة</span>
@@ -140,7 +142,7 @@ export function ContactCTA() {
             href="https://www.linkedin.com/in/youssef-osama1/"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-2.5 px-7 py-4 rounded-2xl bg-[var(--bg-surface)] border border-[var(--border-subtle)] hover:border-[var(--border-hover)] text-[var(--text-primary)] font-medium text-sm md:text-base transition-all duration-300 hover:scale-[1.02] active:scale-[0.98]"
+            className="inline-flex items-center justify-center gap-2.5 px-6 sm:px-7 py-3.5 sm:py-4 rounded-2xl bg-[var(--bg-surface)] border border-[var(--border-subtle)] hover:border-[var(--border-hover)] text-[var(--text-primary)] font-medium text-sm md:text-base transition-all duration-300 hover:scale-[1.02] active:scale-[0.98]"
           >
             <span>تواصل معي على LinkedIn</span>
             <ArrowUpLeft className="w-4 h-4 text-[#0A84FF]" />

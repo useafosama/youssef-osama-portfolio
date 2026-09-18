@@ -29,15 +29,15 @@ export function Lab() {
       {/* Background Subtle Tech Grid */}
       <div className="absolute top-0 right-0 w-full h-full bg-[radial-gradient(var(--border-subtle)_1px,transparent_1px)] [background-size:32px_32px] opacity-40 pointer-events-none -z-10" />
 
-      <div className="max-w-6xl mx-auto px-6 md:px-8">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 md:px-8">
         {/* Section Header */}
-        <div className="flex flex-col md:flex-row md:items-end justify-between mb-16 pb-8 border-b border-[var(--border-subtle)]">
+        <div className="flex flex-col md:flex-row md:items-end justify-between mb-12 sm:mb-16 pb-6 sm:pb-8 border-b border-[var(--border-subtle)]">
           <div>
             <div className="flex items-center gap-2 text-xs font-mono uppercase tracking-widest text-[#38BDF8] mb-3">
               <FlaskConical className="w-4 h-4 text-[#38BDF8]" />
               <span>المختبر • CREATIVE TECHNOLOGY LAB</span>
             </div>
-            <h2 className="font-heading text-4xl sm:text-5xl md:text-6xl font-extrabold text-[var(--text-primary)]">
+            <h2 className="font-heading text-fluid-section font-extrabold text-[var(--text-primary)] leading-[1.2]">
               المختبر
             </h2>
           </div>
