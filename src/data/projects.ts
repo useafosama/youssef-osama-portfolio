@@ -19,6 +19,23 @@ export const featuredProjects: Project[] = [
     accentColor: '#0A84FF',
   },
   {
+    id: 'jayb',
+    title: 'JAYB',
+    arabicTitle: 'جيب — إدارة المصاريف والمالية',
+    subtitle: 'تطبيق مالي شخصي هادئ ومتطور لمتابعة المصروفات والميزانيات والاشتراكات والأهداف الادخارية',
+    description:
+      'تطبيق مالي شخصي هادئ ومتطور لمتابعة المصروفات والميزانيات والاشتراكات الشهرية والأهداف الادخارية عبر مختلف الحسابات والمحافظ البنكية والإلكترونية بأمان وسلاسة فائقة.',
+    category: 'apps',
+    categoryLabel: 'تطبيق مالي وتتبع مصاريف',
+    tags: ['Web Application', 'FinTech', 'Product Design', 'Full-Stack Development', 'Next.js'],
+    link: 'https://jayb-app.vercel.app',
+    featured: true,
+    year: '2026',
+    client: 'مشروع شخصي / FinTech',
+    deliverables: ['Design + Full-Stack Development', 'لوحة مؤشرات مالية وصافي الثروة', 'تتبع المحافظ وحسابات البنوك وإنستاباي', 'ميزانيات ذكية وأهداف ادخارية'],
+    accentColor: '#10B981',
+  },
+  {
     id: 'wazeb',
     title: 'Wazeb',
     arabicTitle: 'واظب',

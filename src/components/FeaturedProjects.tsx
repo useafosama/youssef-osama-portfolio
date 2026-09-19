@@ -16,6 +16,8 @@ import {
   Building2,
   ShieldCheck,
   TrendingUp,
+  Wallet,
+  Sparkles,
 } from 'lucide-react';
 
 export function FeaturedProjects() {
@@ -212,11 +214,229 @@ export function FeaturedProjects() {
             </div>
           </article>
 
-          {/* PROJECT 02: Wazeb — واظب */}
+          {/* PROJECT 02: JAYB — جيب */}
           <article className="group relative">
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
               {/* Project Preview Mockup (7 cols) */}
               <div className="lg:col-span-7 order-1">
+                <a
+                  href="https://jayb-app.vercel.app"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="block group/preview relative rounded-2xl overflow-hidden glass-card p-4 md:p-6 transition-all duration-500 hover:border-emerald-400/50 hover:shadow-[0_20px_60px_rgba(16,185,129,0.18)]"
+                >
+                  {/* Browser Top Bar */}
+                  <div className="flex items-center justify-between pb-4 mb-4 border-b border-[var(--border-subtle)] text-xs text-[var(--text-muted)] font-mono">
+                    <div className="flex items-center gap-2">
+                      <span className="w-3 h-3 rounded-full bg-red-500/60 inline-block" />
+                      <span className="w-3 h-3 rounded-full bg-amber-500/60 inline-block" />
+                      <span className="w-3 h-3 rounded-full bg-emerald-500/60 inline-block" />
+                    </div>
+                    <div className="px-4 py-1 rounded-md bg-[var(--bg-surface-elevated)] border border-[var(--border-subtle)] flex items-center gap-2 text-[11px] text-[var(--text-secondary)]">
+                      <span>jayb-app.vercel.app</span>
+                      <ExternalLink className="w-3 h-3 text-[var(--text-muted)]" />
+                    </div>
+                    <span className="text-[10px] text-emerald-400 font-medium">2026 LIVE</span>
+                  </div>
+
+                  {/* Browser Simulated Financial Dashboard Canvas */}
+                  <div className="bg-[#07130F] rounded-xl p-5 md:p-6 border border-emerald-500/20 transition-transform duration-700 ease-out group-hover/preview:scale-[1.015]">
+                    {/* App Header Bar */}
+                    <div className="flex items-center justify-between pb-4 mb-4 border-b border-white/10">
+                      <div className="flex items-center gap-3">
+                        <div className="w-8 h-8 rounded-lg bg-emerald-500/20 border border-emerald-500/40 flex items-center justify-center font-bold text-emerald-400 text-sm">
+                          ج
+                        </div>
+                        <div>
+                          <div className="text-white font-bold text-sm">JAYB • جيب</div>
+                          <div className="text-neutral-400 text-xs">أموالك.. بكل بساطة ووضوح</div>
+                        </div>
+                      </div>
+                      <div className="flex items-center gap-2">
+                        <span className="px-2.5 py-1 rounded-md bg-emerald-500/10 text-emerald-400 text-xs font-mono font-semibold border border-emerald-500/30 flex items-center gap-1.5">
+                          <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse" />
+                          <span>مزامنة مباشرة</span>
+                        </span>
+                      </div>
+                    </div>
+
+                    {/* Net Worth Hero Card */}
+                    <div className="p-4 rounded-xl bg-gradient-to-br from-[#0D281E] via-[#0A1F17] to-[#06140F] border border-emerald-500/30 mb-4 text-right">
+                      <div className="flex items-center justify-between mb-2">
+                        <span className="text-xs font-semibold text-emerald-300/80">إجمالي صافي الثروة</span>
+                        <span className="text-[11px] font-bold text-emerald-400 bg-emerald-500/20 px-2 py-0.5 rounded-full font-mono">
+                          +14.8% هذا الشهر
+                        </span>
+                      </div>
+                      <div className="text-2xl sm:text-3xl font-black text-white tracking-tight mb-3 font-mono">
+                        148,250.00 <span className="text-xs font-normal text-emerald-300/70 font-sans">ج.م</span>
+                      </div>
+                      <div className="grid grid-cols-3 gap-2 pt-3 border-t border-emerald-500/20 text-[11px]">
+                        <div>
+                          <div className="text-neutral-400 text-[10px]">إجمالي الدخل</div>
+                          <div className="font-bold text-emerald-400 font-mono">+45,000</div>
+                        </div>
+                        <div>
+                          <div className="text-neutral-400 text-[10px]">المصروفات</div>
+                          <div className="font-bold text-rose-300 font-mono">-18,450</div>
+                        </div>
+                        <div>
+                          <div className="text-neutral-400 text-[10px]">معدل الادخار</div>
+                          <div className="font-bold text-emerald-300 font-mono">59.0%</div>
+                        </div>
+                      </div>
+                    </div>
+
+                    {/* Emergency Fund & Recent Transactions */}
+                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-2.5 mb-3">
+                      <div className="p-3 rounded-lg bg-white/[0.03] border border-white/[0.06] flex flex-col justify-between">
+                        <div className="flex items-center justify-between text-xs mb-1.5">
+                          <span className="text-neutral-300 font-semibold flex items-center gap-1.5">
+                            <Wallet className="w-3.5 h-3.5 text-emerald-400" />
+                            صندوق الطوارئ
+                          </span>
+                          <span className="text-emerald-400 font-mono font-bold text-[11px]">75%</span>
+                        </div>
+                        <div className="w-full h-1.5 rounded-full bg-white/10 overflow-hidden mb-1">
+                          <div className="h-full rounded-full bg-emerald-500 w-3/4" />
+                        </div>
+                        <div className="text-[10px] text-neutral-400 font-mono">75,000 / 100,000 ج.م</div>
+                      </div>
+
+                      <div className="p-3 rounded-lg bg-white/[0.03] border border-white/[0.06] flex items-center justify-between">
+                        <div className="flex items-center gap-2">
+                          <div className="w-6 h-6 rounded-md bg-emerald-500/20 text-emerald-400 flex items-center justify-center text-xs">
+                            💼
+                          </div>
+                          <div>
+                            <div className="text-white text-xs font-semibold">مشروع تصميم حر</div>
+                            <div className="text-neutral-400 text-[10px]">دخل إضافي</div>
+                          </div>
+                        </div>
+                        <span className="text-emerald-400 font-mono font-bold text-xs">+25,000</span>
+                      </div>
+                    </div>
+
+                    {/* Bottom CTA overlay on hover */}
+                    <div className="pt-2 border-t border-white/5 flex items-center justify-between text-xs text-neutral-400">
+                      <span>إدارة مالية ذكية ومحافظ متعددة (إنستاباي / بنك)</span>
+                      <span className="text-emerald-400 font-medium flex items-center gap-1 group-hover/preview:underline">
+                        استكشف المشروع ↗
+                      </span>
+                    </div>
+                  </div>
+                </a>
+              </div>
+
+              {/* Project Info (5 cols) */}
+              <div className="lg:col-span-5 order-2 flex flex-col justify-between h-full">
+                <div>
+                  <div className="flex flex-wrap items-center gap-2 sm:gap-3 mb-4">
+                    <span className="font-mono text-xs text-emerald-400 font-semibold tracking-wider">
+                      PROJECT 02
+                    </span>
+                    <span className="w-1 h-1 rounded-full bg-[var(--border-subtle)]" />
+                    <span className="text-xs text-[var(--text-muted)] font-mono">2026</span>
+                    <span className="w-1 h-1 rounded-full bg-[var(--border-subtle)]" />
+                    <span className="px-2 py-0.5 rounded text-[11px] bg-emerald-500/10 text-emerald-400 font-medium">
+                      Design + Development
+                    </span>
+                  </div>
+
+                  <h3 className="font-heading text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-[var(--text-primary)] mb-3 flex flex-wrap items-baseline gap-2 sm:gap-3 group-hover:translate-x-[-4px] transition-transform duration-300 leading-snug">
+                    <span>JAYB</span>
+                    <span className="text-lg sm:text-xl md:text-2xl text-[var(--text-secondary)] font-normal font-sans">
+                      — جيب
+                    </span>
+                  </h3>
+
+                  <p className="text-sm sm:text-base md:text-lg text-[var(--text-secondary)] leading-relaxed mb-6 font-normal">
+                    تطبيق مالي شخصي هادئ ومتطور لمتابعة المصروفات والميزانيات والاشتراكات الشهرية والأهداف الادخارية عبر مختلف الحسابات والمحافظ البنكية والإلكترونية بأمان وسلاسة فائقة.
+                  </p>
+
+                  {/* Tags */}
+                  <div className="flex flex-wrap gap-2 mb-8">
+                    {['Web Application', 'FinTech', 'Product Design', 'Full-Stack Development', 'Next.js'].map((tag) => (
+                      <span
+                        key={tag}
+                        className="px-3 py-1 text-xs rounded-lg bg-[var(--bg-surface-elevated)] text-[var(--text-secondary)] border border-[var(--border-subtle)] font-medium"
+                      >
+                        {tag}
+                      </span>
+                    ))}
+                  </div>
+                </div>
+
+                {/* Live Link Button */}
+                <div className="pt-2">
+                  <a
+                    href="https://jayb-app.vercel.app"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-3 px-6 py-3.5 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white font-semibold text-sm transition-all duration-300 shadow-lg shadow-emerald-600/20 group/btn"
+                  >
+                    <span>استكشف المشروع</span>
+                    <ArrowUpLeft className="w-4 h-4 transition-transform duration-300 group-hover/btn:-translate-x-1 group-hover/btn:-translate-y-1" />
+                  </a>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          {/* PROJECT 03: Wazeb — واظب */}
+          <article className="group relative">
+            <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
+              {/* Project Info (5 cols) */}
+              <div className="lg:col-span-5 order-2 lg:order-1 flex flex-col justify-between h-full">
+                <div>
+                  <div className="flex items-center gap-3 mb-4">
+                    <span className="font-mono text-xs text-[#10B981] font-semibold tracking-wider">
+                      PROJECT 03
+                    </span>
+                    <span className="w-1 h-1 rounded-full bg-[var(--border-subtle)]" />
+                    <span className="text-xs text-[var(--text-muted)] font-mono">2025</span>
+                  </div>
+
+                  <h3 className="font-heading text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-[var(--text-primary)] mb-3 flex flex-wrap items-baseline gap-2 sm:gap-3 group-hover:translate-x-[-4px] transition-transform duration-300 leading-snug">
+                    <span>واظب</span>
+                    <span className="text-lg sm:text-xl md:text-2xl text-[var(--text-secondary)] font-normal font-sans">
+                      — Wazeb
+                    </span>
+                  </h3>
+
+                  <p className="text-sm sm:text-base md:text-lg text-[var(--text-secondary)] leading-relaxed mb-6 font-normal">
+                    تجربة رقمية لبناء العادات والاستمرارية، مصممة لتجعل متابعة العادات أكثر وضوحًا وتحفيزًا، مع واجهة تركز على الإنجاز اليومي والتحفيز المستمر.
+                  </p>
+
+                  {/* Tags */}
+                  <div className="flex flex-wrap gap-2 mb-8">
+                    {['UI/UX', 'Web App', 'Product Design', 'Next.js', 'Habit Tracking'].map((tag) => (
+                      <span
+                        key={tag}
+                        className="px-3 py-1 text-xs rounded-lg bg-[var(--bg-surface-elevated)] text-[var(--text-secondary)] border border-[var(--border-subtle)] font-medium"
+                      >
+                        {tag}
+                      </span>
+                    ))}
+                  </div>
+                </div>
+
+                {/* Live Link Button */}
+                <div className="pt-2">
+                  <a
+                    href="https://wazeb.pages.dev/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-3 px-6 py-3.5 rounded-xl bg-emerald-500 hover:bg-emerald-600 text-white font-semibold text-sm transition-all duration-300 shadow-lg shadow-emerald-500/20 group/btn"
+                  >
+                    <span>زيارة المشروع</span>
+                    <ArrowUpLeft className="w-4 h-4 transition-transform duration-300 group-hover/btn:-translate-x-1 group-hover/btn:-translate-y-1" />
+                  </a>
+                </div>
+              </div>
+
+              {/* Project Preview Mockup (7 cols) */}
+              <div className="lg:col-span-7 order-1 lg:order-2">
                 <a
                   href="https://wazeb.pages.dev/"
                   target="_blank"
@@ -325,59 +545,10 @@ export function FeaturedProjects() {
                   </div>
                 </a>
               </div>
-
-              {/* Project Info (5 cols) */}
-              <div className="lg:col-span-5 order-2 flex flex-col justify-between h-full">
-                <div>
-                  <div className="flex items-center gap-3 mb-4">
-                    <span className="font-mono text-xs text-[#10B981] font-semibold tracking-wider">
-                      PROJECT 02
-                    </span>
-                    <span className="w-1 h-1 rounded-full bg-[var(--border-subtle)]" />
-                    <span className="text-xs text-[var(--text-muted)] font-mono">2025</span>
-                  </div>
-
-                  <h3 className="font-heading text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-[var(--text-primary)] mb-3 flex flex-wrap items-baseline gap-2 sm:gap-3 group-hover:translate-x-[-4px] transition-transform duration-300 leading-snug">
-                    <span>واظب</span>
-                    <span className="text-lg sm:text-xl md:text-2xl text-[var(--text-secondary)] font-normal font-sans">
-                      — Wazeb
-                    </span>
-                  </h3>
-
-                  <p className="text-sm sm:text-base md:text-lg text-[var(--text-secondary)] leading-relaxed mb-6 font-normal">
-                    تجربة رقمية لبناء العادات والاستمرارية، مصممة لتجعل متابعة العادات أكثر وضوحًا وتحفيزًا، مع واجهة تركز على الإنجاز اليومي والتحفيز المستمر.
-                  </p>
-
-                  {/* Tags */}
-                  <div className="flex flex-wrap gap-2 mb-8">
-                    {['UI/UX', 'Web App', 'Product Design', 'Next.js', 'Habit Tracking'].map((tag) => (
-                      <span
-                        key={tag}
-                        className="px-3 py-1 text-xs rounded-lg bg-[var(--bg-surface-elevated)] text-[var(--text-secondary)] border border-[var(--border-subtle)] font-medium"
-                      >
-                        {tag}
-                      </span>
-                    ))}
-                  </div>
-                </div>
-
-                {/* Live Link Button */}
-                <div className="pt-2">
-                  <a
-                    href="https://wazeb.pages.dev/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-flex items-center gap-3 px-6 py-3.5 rounded-xl bg-emerald-500 hover:bg-emerald-600 text-white font-semibold text-sm transition-all duration-300 shadow-lg shadow-emerald-500/20 group/btn"
-                  >
-                    <span>زيارة المشروع</span>
-                    <ArrowUpLeft className="w-4 h-4 transition-transform duration-300 group-hover/btn:-translate-x-1 group-hover/btn:-translate-y-1" />
-                  </a>
-                </div>
-              </div>
             </div>
           </article>
 
-          {/* PROJECT 03: Sakinah — سكينة */}
+          {/* PROJECT 04: Sakinah — سكينة */}
           <article className="group relative">
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
               {/* Project Info (5 cols) */}
@@ -385,7 +556,7 @@ export function FeaturedProjects() {
                 <div>
                   <div className="flex items-center gap-3 mb-4">
                     <span className="font-mono text-xs text-amber-400 font-semibold tracking-wider">
-                      PROJECT 03
+                      PROJECT 04
                     </span>
                     <span className="w-1 h-1 rounded-full bg-[var(--border-subtle)]" />
                     <span className="text-xs text-[var(--text-muted)] font-mono">2025</span>
